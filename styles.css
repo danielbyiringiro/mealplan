@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+.main {
+    text-align: center;
+    flex: 1; /* Grow to fill remaining space */
+    width: 100%;
+    max-width: 800px; /* Example: Set a maximum width for the main content */
+    margin: 0 auto; /* Center align when width is less than viewport */
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0; /* Remove default margin */
+    padding-top: 20px; /* Add padding for spacing */
+}
+
+#subscriberForm {
+    margin-top: 20px; /* Adjust margin for form positioning */
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Make the input container full width */
+}
+
+input#subscriberId {
+    width: calc(100% - 40px); /* Adjust width to accommodate the button */
+    padding: 10px;
+    padding-right: 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 30px;
+}
+
+button#submitButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px; /* Adjust width to fit the image */
+    background: url('search.jpg') no-repeat center center;
+    background-size: 20px 20px; /* Adjust size of the image */
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Rounded corners for the right side of the button */
+}
+
+#output {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left; /* Adjust text alignment */
+}
+
+#products {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left; /* Adjust text alignment */
+    overflow-x: auto; /* Allow horizontal scroll if necessary */
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.hide
+{
+    display: none;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+}
